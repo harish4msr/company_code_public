@@ -1,0 +1,6 @@
+{% extends "stockcity/master.html" %}
+{% block main %}
+{% for product in products %}
+<div><a href = "{% url 'products' product.id %}">{{product.Title}}</a>,{{product.Date}}</div> <!-- <a href = "{% url 'products' product.id %}"> </a> is added to create hyperlink -->
+{% endfor %}
+{% endblock %}

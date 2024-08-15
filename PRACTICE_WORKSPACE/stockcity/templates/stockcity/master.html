@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STOCK CITY</title>
+    {% load static %}
+    <link rel = "stylesheet" href="{% static 'shop/styles/screen.css' %}">
+</head>
+<body>
+    <img class="logo" src = "{% static 'stockcity/images/logo.png' %}">
+    <h1>{{ title }}</h1>  <!-- this title is coming from productdetailsview.py & also indexview.py -->
+    {% block main %}{% endblock %}
+</body>
+</html>
